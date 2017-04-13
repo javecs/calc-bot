@@ -31,8 +31,15 @@ repositories {
 	mavenCentral()
 }
 
+repositories {
+	maven {
+		url  "http://dl.bintray.com/javecs/tools"
+	}
+}
 
 dependencies {
+	compile("xyz.javecs.tools:expr:latest.release")
+	compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.8.7")
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
