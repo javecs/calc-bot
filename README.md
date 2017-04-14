@@ -8,8 +8,8 @@ LINE Messaging APIを使って、数式の計算結果を返します。
 ## 使うもの
 - Kotlin 1.1
 - Spring Boot 1.5.2
+- [Java SDK for Messaging API BOT 1.6](https://github.com/line/line-bot-sdk-java)
 - [expr](https://github.com/javecs/expr) 
-  - ```"xyz.javecs.tools:expr:latest.release"```
   
 ## Webhook URL
 - LINEの`Bot`に設定する`Webhook URL`は、サーバーのエンドポイントに`/callback`をつけます。
