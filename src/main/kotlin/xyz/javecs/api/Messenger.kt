@@ -6,13 +6,18 @@ import com.linecorp.bot.spring.boot.annotation.EventMapping
 import com.linecorp.bot.model.message.TextMessage
 import com.linecorp.bot.model.event.message.TextMessageContent
 import com.linecorp.bot.model.event.MessageEvent
-import xyz.javecs.tools.expr.eval
+import org.springframework.beans.factory.annotation.Autowired
+import xyz.javecs.tools.expr.Calculator
 
 @LineMessageHandler
 class Messenger {
+
+    @Autowired
+    lateinit var calculator: Calculator
+
     @EventMapping
     fun reply(event: MessageEvent<TextMessageContent>): TextMessage {
-        return TextMessage(eval(event.message.text).toString())
+        return TextMessage(calculator.evaluate(event.message.text).getValue().toString())
     }
 
     @EventMapping
