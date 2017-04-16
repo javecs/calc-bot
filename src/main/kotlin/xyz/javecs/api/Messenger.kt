@@ -17,7 +17,7 @@ class Messenger {
 
     @EventMapping
     fun reply(event: MessageEvent<TextMessageContent>): TextMessage {
-        return TextMessage(calculator.evaluate(event.message.text).getValue().toString())
+        return TextMessage(calculator.eval(event.message.text).value.toString())
     }
 
     @EventMapping
