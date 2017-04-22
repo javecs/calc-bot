@@ -1,4 +1,4 @@
-package xyz.javecs
+package xyz.javecs.test
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -11,7 +11,7 @@ import kotlin.test.assertEquals
 @ActiveProfiles("test")
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class CalcBotApplicationTests {
+class CalcBotApplicationTest {
 
 	@Test fun evalAdd() {
 		assertEquals(7, eval("3+4"))
