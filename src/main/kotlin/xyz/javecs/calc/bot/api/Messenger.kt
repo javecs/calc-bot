@@ -1,4 +1,4 @@
-package xyz.javecs.api
+package xyz.javecs.calc.bot.api
 
 import com.linecorp.bot.model.event.Event
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler
@@ -7,7 +7,7 @@ import com.linecorp.bot.model.message.TextMessage
 import com.linecorp.bot.model.event.message.TextMessageContent
 import com.linecorp.bot.model.event.MessageEvent
 import org.springframework.beans.factory.annotation.Autowired
-import xyz.javecs.utils.textToOperator
+import xyz.javecs.calc.bot.utils.textToOperator
 import xyz.javecs.tools.expr.Calculator
 
 @LineMessageHandler

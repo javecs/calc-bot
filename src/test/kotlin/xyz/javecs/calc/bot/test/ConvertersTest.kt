@@ -1,10 +1,10 @@
-package xyz.javecs.test
+package xyz.javecs.calc.bot.test
 
 import org.junit.Test
-import xyz.javecs.utils.textToOperator
+import xyz.javecs.calc.bot.utils.textToOperator
 import kotlin.test.assertEquals
 
-class ConverterTest {
+class ConvertersTest {
     @Test fun mapper1() {
         assertEquals("3*3", textToOperator("3곱하기3"))
         assertEquals("3/3", textToOperator("3나누기3"))
