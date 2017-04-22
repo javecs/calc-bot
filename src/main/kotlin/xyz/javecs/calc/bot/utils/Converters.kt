@@ -1,4 +1,4 @@
-package xyz.javecs.utils
+package xyz.javecs.calc.bot.utils
 
 private val operators = HashMap<String, String>().apply {
     put("掛ける", "*")
