@@ -7,6 +7,7 @@ import com.linecorp.bot.model.message.TextMessage
 import com.linecorp.bot.model.event.message.TextMessageContent
 import com.linecorp.bot.model.event.MessageEvent
 import org.springframework.beans.factory.annotation.Autowired
+import xyz.javecs.utils.textToOperator
 import xyz.javecs.tools.expr.Calculator
 
 @LineMessageHandler
@@ -17,7 +18,7 @@ class Messenger {
 
     @EventMapping
     fun reply(event: MessageEvent<TextMessageContent>): TextMessage {
-        return TextMessage(calculator.eval(event.message.text).value.toString())
+        return TextMessage(calculator.eval(textToOperator(event.message.text)).value.toString())
     }
 
     @EventMapping
