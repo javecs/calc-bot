@@ -14,11 +14,11 @@ import kotlin.test.assertEquals
 @SpringBootTest
 class CalculatorTest {
 
-	@Autowired
-	lateinit var calculator: Calculator
+    @Autowired
+    lateinit var calculator: Calculator
 
-	@Test fun calc1() {
-		assertEquals(1.60934, calculator.eval("miles2km(1)").value)
-	}
+    @Test fun calc1() {
+        assertEquals(1.60934, calculator.eval("miles2km(1)").value)
+    }
 
 }
