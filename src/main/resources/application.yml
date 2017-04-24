@@ -1,6 +1,0 @@
-server.port: 5000
-
----
-profile: test
-line.bot.channelToken: token
-line.bot.channelSecret: secret
