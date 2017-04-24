@@ -16,11 +16,11 @@ LINE Messaging APIを使って、数式の計算結果を返します。
 - 例：サーバーのエンドポイントが、`https://calc-bot.xxx.xxx/`の場合
     - Webhook URL: https://calc-bot.xxx.xxx/calcback
     
-## App Engine にデプロイ時のアプリ設定
+## デプロイ時のアプリ設定
 - デプロイするときには、`src/main/resources/application.yml`にChannelsの情報を設定してください。
 ```
-line.bot.channelToken: token...
-line.bot.channelSecret: secret...
+line.bot.channelToken: token
+line.bot.channelSecret: secret
 ```
 
 ## 動作画面
