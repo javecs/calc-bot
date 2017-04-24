@@ -16,13 +16,12 @@ LINE Messaging APIを使って、数式の計算結果を返します。
 - 例：サーバーのエンドポイントが、`https://calc-bot.xxx.xxx/`の場合
     - Webhook URL: https://calc-bot.xxx.xxx/calcback
     
-## 実行時の環境変数
-- サーバで実行するときには、`Channels`の情報を設定してください。
-
-環境変数名 |Channelsの情報
------------- | -------------
-LINE_BOT_CHANNEL_TOKEN | Channel Access Token
-LINE_BOT_CHANNEL_SECRET | Channel Secret
+## App Engine にデプロイ時のアプリ設定
+- デプロイするときには、`src/main/resources/application.yml`にChannelsの情報を設定してください。
+```
+line.bot.channelToken: token...
+line.bot.channelSecret: secret...
+```
 
 ## 動作画面
 ![LINE画面](http://i.imgur.com/N8q1AGA.gif)
