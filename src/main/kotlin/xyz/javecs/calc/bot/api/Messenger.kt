@@ -15,7 +15,7 @@ class Messenger {
 
     @EventMapping
     fun reply(event: MessageEvent<TextMessageContent>): TextMessage {
-        return TextMessage(text2Expr.eval(event.message.text))
+        return TextMessage(text2Expr.eval(event.message.text, rendered = true))
     }
 
     @EventMapping
