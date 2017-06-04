@@ -25,6 +25,3 @@ line.bot.channelSecret: secret
 
 ## 動作画面
 ![LINE画面](http://i.imgur.com/N8q1AGA.gif)
-
-## お試し
-[![友だち追加](https://scdn.line-apps.com/n/line_add_friends/btn/ja.png)](https://line.me/R/ti/p/%40nkb2483d)
